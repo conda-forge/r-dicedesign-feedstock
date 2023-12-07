@@ -1,4 +1,4 @@
-{% set version = "1.9" %}
+{% set version = "1.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DiceDesign_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DiceDesign/DiceDesign_{{ version }}.tar.gz
-  sha256: 93c23730e02471e4225f0254f47d838b5e113162316e3640cccebf5e8cea11a9
+  sha256: 06543b207b8c1732bda575b9f60ca4ec004f896676e04200af8b222f8933c73d
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
